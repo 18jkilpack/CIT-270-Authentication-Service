@@ -1,0 +1,23 @@
+{
+  "name": "cit270",
+  "version": "1.0.0",
+  "description": "",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18jkilpack/CIT-270-Authentication-Service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/18jkilpack/CIT-270-Authentication-Service/issues"
+  },
+  "homepage": "https://github.com/18jkilpack/CIT-270-Authentication-Service#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
+  }
+}
