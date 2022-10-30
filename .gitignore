@@ -1,3 +1,4 @@
 node_modules
 server.key
 servery.cert
+chain.pem
