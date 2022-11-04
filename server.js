@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 https.createServer({
     key: fs.readFileSync('server.key'),
     cert: fs.readFileSync('server.cert'),
-    ca:fs.readFileSync('chain.pem');
+    ca:fs.readFileSync('chain.pem')
 }, app).listen(port, async ()=>{
     await redisClient.connect();//creating a TCP socket with Redis
     console.log("Listening on port: "+port);
