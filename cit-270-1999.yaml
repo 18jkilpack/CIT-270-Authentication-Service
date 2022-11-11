@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redalphaj
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redalphaj
+  template:
+    metadata:
+      name: redalphaj
+      labels:
+        app: redalphaj
+    spec:
+      containers:
+      - name: redalphaj
+        image: redalphaj/cit-270-1999
+        volumeMounts:
+        - name: ssl
+          mountPath: "/usr/src/app/SSL"
+        command: ["npm"]
+        args: ["run", "start"]
+        resources:
+          requests:
+            cpu: .125
+            memory: "500Mi"
+          limits:
+            cpu: .125
+            memory: "600Mi"
+        imagePullPolicy: IfNotPresent
+      volumes:
+      - name: ssl
+        secret:
+          secretName: ssl.secret.jackson
