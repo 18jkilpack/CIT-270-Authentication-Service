@@ -1,1 +1,1 @@
-curl -v -d "@newuser.json" -X POST -H "Content-Type:application/json" http://jkilpack.cit270.com/user
+curl -v -d "@newuser.json" -X POST -H "Content-Type:application/json" https://jkilpack.cit270.com/user
