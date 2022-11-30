@@ -11,7 +11,7 @@ const { json } = require('body-parser');
 
 const redisClient = createClient(
 {
-      url:'redis://default@localhost:6379',
+      url:'redis://default@redis-stedi-jackson:6379',
 }
 );
 
